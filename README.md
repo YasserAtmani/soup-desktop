@@ -1,4 +1,4 @@
-# Application Remake Spotify
+# Application Remake Spotify Desktop
 
 Projet Middleware Ice &amp; Soup : application de streaming musical basée sur une architecture distribuée, la librairie VLC et sur le middleware Ice, par Zeroc
 
