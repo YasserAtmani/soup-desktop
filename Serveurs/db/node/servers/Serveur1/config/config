@@ -1,0 +1,17 @@
+# Configuration file (05/12/22 12:59:35.729)
+
+# Server configuration
+Ice.Admin.ServerId=Serveur1
+Ice.Admin.Endpoints=tcp -h localhost
+Ice.ProgramName=Serveur1
+# Object adapter server1Adapter
+server1Adapter.Endpoints=tcp -h 134.209.226.109
+server1Adapter.AdapterId=Serveur1.server1Adapter
+# Server descriptor properties
+Identity=serveur1
+IceMX.Metrics.Debug.GroupBy=id
+IceMX.Metrics.Debug.Disabled=1
+IceMX.Metrics.ByParent.GroupBy=parent
+IceMX.Metrics.ByParent.Disabled=1
+Ice.MessageSizeMax=0
+Ice.Default.Locator=DemoIceGrid/Locator:default -h 134.209.226.109 -p 10000

@@ -1,0 +1,17 @@
+# Configuration file (05/12/22 12:59:35.730)
+
+# Server configuration
+Ice.Admin.ServerId=ServeurVLC
+Ice.Admin.Endpoints=tcp -h localhost
+Ice.ProgramName=ServeurVLC
+# Object adapter vlcAdapter
+vlcAdapter.Endpoints=tcp -h 134.209.226.109
+vlcAdapter.AdapterId=ServeurVLC.vlcAdapter
+# Server descriptor properties
+Identity=serveurVLC
+IceMX.Metrics.Debug.GroupBy=id
+IceMX.Metrics.Debug.Disabled=1
+IceMX.Metrics.ByParent.GroupBy=parent
+IceMX.Metrics.ByParent.Disabled=1
+Ice.MessageSizeMax=0
+Ice.Default.Locator=DemoIceGrid/Locator:default -h 134.209.226.109 -p 10000

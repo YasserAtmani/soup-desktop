@@ -1,0 +1,51 @@
+<icegrid>
+
+  <application name="Simple">
+
+    <node name="node1">
+      <server id="Serveur1" exe="python3" activation="on-demand">
+        <option>server1.py</option>
+        <adapter name="server1Adapter" endpoints="tcp -h 134.209.226.109">
+          <object identity="serveur1" type="::Demo::Serveurs" property="Identity"/>
+        </adapter>
+
+        <property name="IceMX.Metrics.Debug.GroupBy" value="id"/>
+        <property name="IceMX.Metrics.Debug.Disabled" value="1"/>
+        <property name="IceMX.Metrics.ByParent.GroupBy" value="parent"/>
+        <property name="IceMX.Metrics.ByParent.Disabled" value="1"/>
+        <property name="Ice.MessageSizeMax" value="0"/>
+      </server>
+
+      <server id="Serveur2" exe="python3" activation="on-demand">
+        <option>server2.py</option>
+        <adapter name="server2Adapter" endpoints="tcp -h 134.209.226.109">
+          <object identity="serveur2" type="::Demo::Serveurs" property="Identity"/>
+        </adapter>
+
+        <property name="IceMX.Metrics.Debug.GroupBy" value="id"/>
+        <property name="IceMX.Metrics.Debug.Disabled" value="1"/>
+        <property name="IceMX.Metrics.ByParent.GroupBy" value="parent"/>
+        <property name="IceMX.Metrics.ByParent.Disabled" value="1"/>
+        <property name="Ice.MessageSizeMax" value="0"/>
+      </server>
+
+      <server id="ServeurVLC" exe="python3" activation="on-demand">
+        <option>serverVLC.py</option>
+        <adapter name="vlcAdapter" endpoints="tcp -h 134.209.226.109">
+          <object identity="serveurVLC" type="::Demo::VLC" property="Identity"/>
+        </adapter>
+
+        <property name="IceMX.Metrics.Debug.GroupBy" value="id"/>
+        <property name="IceMX.Metrics.Debug.Disabled" value="1"/>
+        <property name="IceMX.Metrics.ByParent.GroupBy" value="parent"/>
+        <property name="IceMX.Metrics.ByParent.Disabled" value="1"/>
+        <property name="Ice.MessageSizeMax" value="0"/>
+      </server>
+
+    </node>
+
+  </application>
+  
+</icegrid>
+
+
