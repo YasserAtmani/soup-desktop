@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1595.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.AboutController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0" mouseTransparent="true" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ref.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="282.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" styleClass="title" text="À propos du projet" />
+      <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="900.0" prefWidth="240.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="homeButton" layoutX="21.0" layoutY="153.0" mnemonicParsing="false" onAction="#loadHome" style="-fx-background-color: transparent;" text=" Accueil" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Product Sans Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconHome" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0012_home-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="addSongMenu" layoutX="21.0" layoutY="215.0" mnemonicParsing="false" onAction="#loadForm" style="-fx-background-color: transparent;" text=" Ajouter une musique" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Product Sans Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconAdd" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0014_add-circle-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="searchBar" layoutX="25.0" layoutY="64.0" prefHeight="30.0" prefWidth="191.0" promptText="Rechercher..." style="-fx-background-color: #181818;">
+               <font>
+                  <Font name="Product Sans" size="12.0" />
+               </font></TextField>
+         </children></AnchorPane>
+      <AnchorPane fx:id="titleBar" layoutX="1358.0" prefHeight="900.0" prefWidth="268.0" style="-fx-background-color: black;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="closeButton" layoutX="193.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="50.0" styleClass="closeButtonBar" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="11.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0002_close-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="resizeButton" layoutX="133.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" styleClass="titleBarButton" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="11.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0000_square-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="minimizeButton" layoutX="73.0" mnemonicParsing="false" onAction="#minimize" prefHeight="30.0" prefWidth="50.0" styleClass="titleBarButton" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="1.0" fitWidth="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@ico/white_0001_remove-sharp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Projet Middleware Ice &amp; Soup : application de streaming musical basée sur architecture distribuée, la librairie VLC et sur le middleware Ice, par Zeroc" textAlignment="CENTER" wrappingWidth="240.0">
+               <font>
+                  <Font name="Product Sans" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="aboutButton" layoutX="39.0" layoutY="335.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="191.0" style="-fx-background-color: WHITE; -fx-background-radius: 100; -fx-opacity: .5;" text="E N   S A V O I R   P L U S">
+               <font>
+                  <Font name="Product Sans" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="282.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" styleClass="title" text="Liste des serveurs :" wrappingWidth="306.990234375" />
+      <Text fill="WHITE" layoutX="798.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" styleClass="title" text="Service Ice utilisé : IceGrid" />
+      <Text fill="WHITE" layoutX="282.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" styleClass="subtitle" text="• Serveur de streaming VLC" wrappingWidth="380.625" />
+      <Text fill="WHITE" layoutX="283.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" styleClass="subtitle" text="• Serveur 2 (autres genre)" wrappingWidth="380.625" />
+      <Text fill="WHITE" layoutX="283.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" styleClass="subtitle" text="• Serveur 1 (musique urbaine)" wrappingWidth="380.625" />
+      <ImageView fitHeight="348.0" fitWidth="429.0" layoutX="240.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@schema.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="615.0" fitWidth="514.0" layoutX="798.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icegrid-xml.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,137 @@
+* {
+    -fx-gray: #181818;
+    -fx-gray2: #121212;
+    -fx-grayHover: #454545;
+    -fx-green: #1ed750;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: -fx-grayHover;
+    -fx-background-radius: 0em;
+}
+
+.title {
+    -fx-fill: #fff;
+    -fx-font-size: 31;
+    -fx-font-family: "Product Sans Black";
+}
+
+.subtitle {
+    -fx-fill: #fff;
+    -fx-font-size: 22;
+    -fx-font-family: "Product Sans Black";
+}
+
+
+.titleSong {
+    -fx-fill: #fff;
+    -fx-font-size: 25;
+    -fx-font-family: "Product Sans Black";
+}
+
+
+.closeButtonBar {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+
+.titleBarButton {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+
+.closeButtonBar:hover {
+    -fx-background-color: #e81123;
+}
+
+.titleBarButton:hover {
+    -fx-background-color: -fx-grayHover;
+}
+
+.sliderSound .track {
+    -fx-background-color: -slider-track-color ;
+    -fx-pref-height: 2;
+}
+
+.sliderSound .thumb {
+    -fx-background-color: #fff ;
+}
+
+.progress > .bar, .progress-bar > .track {
+    -fx-background-insets: 0;
+}
+
+.progress {
+    -fx-pref-height: 4;
+    -fx-border-style: none;
+}
+
+.progress .track {
+    -fx-background-color: -fx-gray2;
+    -fx-padding: 0;
+    -fx-background-radius: 20;
+}
+
+.progress .bar {
+    -fx-background-color: -fx-green;
+    -fx-background-radius: 20;
+}
+
+.radio-button {
+    -fx-text-fill: #fff;
+    -fx-font-size: 15;
+    -fx-font-family: "Product Sans Bold";
+}
+
+.radio-button .radio {
+    -fx-background-color: transparent;
+    -fx-border-color: -fx-green;
+    -fx-border-width: 2px;
+    -fx-border-radius: 100%;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 20px;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: -fx-green;
+    -fx-background-radius: 100px;
+}
+
+.form-input {
+    -fx-background-radius: 100px;
+    -fx-background-color: -fx-grayHover;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15;
+    -fx-font-family: "Product Sans";
+}
+
+.form-button {
+    -fx-background-radius: 100px;
+    -fx-text-fill: -fx-gray;
+    -fx-font-family: "Product Sans Bold";
+}
+
+.button:hover {
+    -fx-cursor: hand;
+}

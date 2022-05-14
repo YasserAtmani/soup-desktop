@@ -1,0 +1,4 @@
+#
+# The IceGrid locator proxy.
+#
+Ice.Default.Locator=DemoIceGrid/Locator:default -h 134.209.226.109 -p 10000

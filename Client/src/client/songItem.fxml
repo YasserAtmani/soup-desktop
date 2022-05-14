@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="itemSong" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: -fx-gray; -fx-background-radius: 5;" styleClass="songItem" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.SongItem">
+   <children>
+      <ImageView fitHeight="180.0" fitWidth="184.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-backround-radius: 20;">
+         <image>
+            <Image url="@682-200x200.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="10.0" layoutY="252.0" prefHeight="38.0" prefWidth="180.0">
+         <children>
+            <Text fx:id="songDetails" fill="WHITE" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bar" text="Artiste et album" wrappingWidth="180.0">
+               <font>
+                  <Font name="Product Sans" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="playItem" layoutX="124.0" layoutY="136.0" mnemonicParsing="false" onAction="#playSong" prefHeight="48.0" prefWidth="47.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="61.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/green_0011_play-circle-sharp-copie.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="playItem1" layoutX="134.0" layoutY="146.0" mnemonicParsing="false" onAction="#playSong" prefHeight="48.0" prefWidth="47.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="editButton" layoutX="100.0" layoutY="22.0" mnemonicParsing="false" onAction="#updateSong" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: -fx-green; -fx-background-radius: 100px;">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ico/white_0001_pencil-sharp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="delButton" layoutX="148.0" layoutY="22.0" mnemonicParsing="false" onAction="#delSong" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: #e81123; -fx-background-radius: 100px;">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ico/white_0000_trash-bin-outline.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="songTitle" layoutX="10.0" layoutY="209.0" prefHeight="17.0" prefWidth="180.0" style="-fx-text-fill: white;" styleClass="titleSong" text="TitreSon" />
+   </children>
+</AnchorPane>

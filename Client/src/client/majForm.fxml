@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1595.0" style="-fx-background-color: #121212;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.MajFormController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0" mouseTransparent="true" opacity="0.0" pickOnBounds="true" preserveRatio="true" styleClass="form-input">
+         <image>
+            <Image url="@ref.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="625.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" styleClass="title" text="Modifier une musique" />
+      <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="900.0" prefWidth="240.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="homeButton" layoutX="21.0" layoutY="153.0" mnemonicParsing="false" onAction="#loadHome" style="-fx-background-color: transparent;" text=" Accueil" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Product Sans Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconHome" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0012_home-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="addSongMenu" layoutX="21.0" layoutY="215.0" mnemonicParsing="false" onAction="#loadForm" style="-fx-background-color: transparent;" text=" Ajouter une musique" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Product Sans Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconAdd" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0014_add-circle-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField layoutX="25.0" layoutY="64.0" prefHeight="30.0" prefWidth="191.0" promptText="Rechercher..." style="-fx-background-color: #181818;">
+               <font>
+                  <Font name="Product Sans" size="12.0" />
+               </font></TextField>
+            <Button fx:id="gererButton" layoutX="21.0" layoutY="276.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text=" Gérer la collection" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Product Sans Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconAdd1" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0011_settings-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane fx:id="titleBar" layoutX="1358.0" prefHeight="900.0" prefWidth="268.0" style="-fx-background-color: black;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="closeButton" layoutX="193.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="50.0" styleClass="closeButtonBar" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="11.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0002_close-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="resizeButton" layoutX="133.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" styleClass="titleBarButton" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="11.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0000_square-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="minimizeButton" layoutX="73.0" mnemonicParsing="false" onAction="#minimize" prefHeight="30.0" prefWidth="50.0" styleClass="titleBarButton" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="1.0" fitWidth="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@ico/white_0001_remove-sharp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Projet Middleware Ice &amp; Soup : application de streaming musical basée sur architecture distribuée, la librairie VLC et sur le middleware Ice, par Zeroc" textAlignment="CENTER" wrappingWidth="240.0">
+               <font>
+                  <Font name="Product Sans" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="aboutButton" onAction="#loadAbout"  layoutX="39.0" layoutY="335.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="191.0" style="-fx-background-color: WHITE; -fx-background-radius: 100;" text="E N   S A V O I R   P L U S">
+               <font>
+                  <Font name="Product Sans" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="533.0" layoutY="315.0">
+         <children>
+            <TextField fx:id="titreField" prefHeight="50.0" prefWidth="500.0" promptText="Titre" styleClass="form-input" />
+            <TextField fx:id="albumField" layoutY="87.0" prefHeight="50.0" prefWidth="240.0" promptText="Album" styleClass="form-input" />
+            <TextField fx:id="artisteField" layoutX="262.0" layoutY="87.0" prefHeight="50.0" prefWidth="240.0" promptText="Artiste" styleClass="form-input" />
+            <Button fx:id="addFileButton" layoutX="4.0" layoutY="261.0" mnemonicParsing="false" onAction="#addFile" prefHeight="48.0" prefWidth="240.0" style="-fx-font-size: 12; -fx-background-color: white;" styleClass="form-button" text="J O I N D R E  U N   F I C H I E R" />
+            <Text fx:id="filenameText" fill="WHITE" layoutX="1.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aucun fichier choisi" textAlignment="CENTER" wrappingWidth="500.0">
+               <font>
+                  <Font name="Product Sans" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="addSongButton" layoutX="258.0" layoutY="261.0" mnemonicParsing="false" onAction="#updateSong" prefHeight="48.0" prefWidth="240.0" style="-fx-font-size: 15; -fx-text-fill: white; -fx-background-color: -fx-green;" styleClass="form-button" text="M E T T R E   À   J O U R" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="errorPane" layoutX="238.0" layoutY="842.0" prefHeight="58.0" prefWidth="1092.0" style="-fx-background-color: #e81123;">
+         <children>
+            <Text fill="WHITE" layoutX="63.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="" text="Erreur : Un ou plusieurs champs invalide(s)." textAlignment="CENTER" wrappingWidth="966.4765625">
+               <font>
+                  <Font name="Product Sans" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

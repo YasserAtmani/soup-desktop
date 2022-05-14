@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1595.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.DemarrerController">
+   <children>
+      <AnchorPane fx:id="titleBar" layoutX="1358.0" prefHeight="35.0" prefWidth="1595.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="closeButton" layoutX="193.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="50.0" styleClass="closeButtonBar" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="11.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0002_close-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="resizeButton" layoutX="133.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" styleClass="titleBarButton" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="11.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ico/white_0000_square-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="minimizeButton" layoutX="73.0" mnemonicParsing="false" onAction="#minimize" prefHeight="30.0" prefWidth="50.0" styleClass="titleBarButton" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="1.0" fitWidth="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@ico/white_0001_remove-sharp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="startStream" layoutX="575.0" layoutY="406.0" mnemonicParsing="false" onAction="#start" prefHeight="88.0" prefWidth="446.0" style="-fx-background-radius: 100; -fx-background-color: white;" text="D E M A R R E R   L A   L E C T U R E">
+         <font>
+            <Font name="Product Sans Medium" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
