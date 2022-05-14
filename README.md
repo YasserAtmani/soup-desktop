@@ -6,5 +6,5 @@ Projet Middleware Ice &amp; Soup : application de streaming musical basée sur u
 
 # Screenshots
 
-<img src="./Screen_soup_home.png" alt="Acuueil" width="540">
-<img src="./Screen_soup_add.png" alt="Ajout" width="540">
+<img src="./Screen_soup_home.png" alt="Acuueil" width="1080">
+<img src="./Screen_soup_add.png" alt="Ajout" width="1080">
